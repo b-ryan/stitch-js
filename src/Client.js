@@ -48,6 +48,8 @@ export default class StitchClient {
         } else {
           this._pollForChildWindowClosed();
         }
+      } else {
+        this._windowClosed()
       }
     }, 1000);
   }
